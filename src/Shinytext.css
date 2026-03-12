@@ -1,0 +1,24 @@
+.shiny-text {
+  color: rgba(255, 255, 255, 0.35);
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shiny-text-animation linear infinite;
+}
+
+.shiny-text.disabled {
+  animation: none;
+  color: rgba(255, 255, 255, 1);
+}
+
+@keyframes shiny-text-animation {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
+}
