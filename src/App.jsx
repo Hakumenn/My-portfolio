@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className="portfolio-wrapper">
-      {/* Background stays strictly behind everything */}
+      {/* fix bg*/}
       <div className="fixed-background">
         <div className="glow-orb orb-1"></div>
         <div className="glow-orb orb-2"></div>
