@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import "./Carousel.css";
 
-// --- REVISED SECTION: IMPORT IMAGES ---
-// Importing ensures Vite processes these for GitHub Pages
+
 import portfolioImg from "./assets/portfolio.jpg";
 import yubisImg from "./assets/Yubis.png";
 import pawfeedsImg from "./assets/pawfeeds.jpg";
@@ -15,26 +14,26 @@ const Carousel = ({ autoplay = true, autoplayDelay = 3000, pauseOnHover = true }
   const [dragStart, setDragStart] = useState(null);
   const [isDragging, setIsDragging] = useState(false);
 
-  // --- REVISED SECTION: CARDS ARRAY ---
+
   const cards = [
     { 
       id: 1, 
       title: "Portfolio Website", 
-      image: portfolioImg, // Use the imported variable
+      image: portfolioImg, 
       description: "A sleek, high-performance personal brand platform. It features a custom-engineered 3D carousel, glassmorphism UI design, and smooth GSAP-driven scrolling for a modern, immersive user experience.",
       tech: ["React.js", "CSS3", "GSAP", "Lucide React"]
     },
     { 
       id: 2, 
       title: "Yubi's ToyShop CMS", 
-      image: yubisImg, // Use the imported variable
+      image: yubisImg, 
       description: "A comprehensive Content Management System designed for the physical store Yubi's Toy Shop to manage inventory and sales.",
       tech: ["JavaScript", "Figma", "Tailwind", "PHP", "Laravel", "Node.js"]
     },
     { 
       id: 3, 
       title: "PAW FEEDS System", 
-      image: pawfeedsImg, // Use the imported variable
+      image: pawfeedsImg, 
       description: "A smart IoT-based Automated Dog Feeder, maintains good feeding schedule and streams live video on the mobile application.",
       tech: ["React", "Node.js", "IoT-Based", "Hardware"]
     }
